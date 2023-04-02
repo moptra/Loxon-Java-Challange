@@ -1,0 +1,1 @@
+Hozd létre a `SumDigits` osztályt, és annak a `sumDigits(int number)` metódusát, aminek a feladata, hogy a paraméterben kapott számnak adja össze a számjegyeit, és adja vissza az összeget!

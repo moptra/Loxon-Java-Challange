@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>hu.progmasters</groupId>
+        <artifactId>A-core</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>A01-oop</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+    <module>exercises/pm_01_encapsulation/car</module>
+    <module>exercises/pm_01_encapsulation/customer</module>
+    <module>exercises/pm_01_encapsulation/employee</module>
+    <module>exercises/pm_01_encapsulation/ork</module>
+
+    <module>exercises/pm_02_composition/desk</module>
+    <module>exercises/pm_02_composition/person</module>
+
+    <module>exercises/pm_02_inheritance/fighter</module>
+    <module>exercises/pm_02_inheritance/highschool</module>
+    <module>exercises/pm_02_inheritance/inheritance_car</module>
+
+    <module>exercises/pm_03_polymorphism/abstract_classes_car</module>
+    <module>exercises/pm_03_polymorphism/account</module>
+    <module>exercises/pm_03_polymorphism/casting_sandbox</module>
+    <module>exercises/pm_03_polymorphism/human</module>
+    <module>exercises/pm_03_polymorphism/interface_example</module>
+    <module>exercises/pm_03_polymorphism/regularcar</module>
+
+    <module>exercises/pm_04_enum/card</module>
+    <module>exercises/pm_04_enum/casino</module>
+    <module>exercises/pm_04_enum/month</module>
+    <module>exercises/pm_04_enum/pizza</module>
+
+    <module>exercises/pm_05_exception/demo/checked_and_unchecked</module>
+    <module>exercises/pm_05_exception/demo/exception_catching</module>
+    <module>exercises/pm_05_exception/demo/exception_throwing</module>
+    <module>exercises/pm_05_exception/demo/finally_block</module>
+    <module>exercises/pm_05_exception/demo/multicatch</module>
+
+    <module>exercises/pm_05_exception/exercises/exceptions1</module>
+    <module>exercises/pm_05_exception/exercises/exceptions2</module>
+    <module>exercises/pm_05_exception/exercises/exceptions3</module>
+    <module>exercises/pm_05_exception/exercises/exceptions4</module>
+    <module>exercises/pm_05_exception/exercises/sandbox</module>
+
+    <module>exercises/pm_06_map_coupling_cohesion/farm</module>
+    <module>exercises/pm_06_map_coupling_cohesion/fleet</module>
+    <module>exercises/pm_06_map_coupling_cohesion/map</module>
+    <module>exercises/pm_06_map_coupling_cohesion/shopping_list</module>
+
+    </modules>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
