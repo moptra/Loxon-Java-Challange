@@ -12,8 +12,11 @@ public class InAndOut {
         Reader reader = new Reader();
         //reader.readSingleChar();
 
-        writer.writeMultipleChars();
-        reader.readMultipleChars();
+       //writer.writeMultipleChars();
+       //reader.readMultipleChars();
+
+        writer.bufferWriter();
+        reader.bufferedReader();
 
 
 
