@@ -1,0 +1,17 @@
+
+Š
+java:S1192"mDefine a constant instead of duplicating this literal "C:\\Users\\DELL\\Desktop\\InAndOut\\test.txt" 3 times.(Ø¹¤ì8Õ°Ğ·÷0
+9
+java:S1643"Use a StringBuilder instead.(…‡şŠ8Ö°Ğ·÷0
+9
+java:S1643,"Use a StringBuilder instead.(…‡şŠ8Ö°Ğ·÷0
+j
+java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Ø¹¤ì8±Ğ·÷0
+j
+java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Ø¹¤ì8±Ğ·÷0
+n
+java:S2095("QUse try-with-resources or close this "BufferedInputStream" in a "finally" clause.(€š†Á8‘±Ğ·÷0
+j
+java:S2095'"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(Ø¹¤ì8±Ğ·÷0
+\
+java:S1128":Remove this unused import 'java.io.FileNotFoundException'.(·î™ùÿÿÿÿ8¡±Ğ·÷0
