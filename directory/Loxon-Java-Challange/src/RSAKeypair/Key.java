@@ -4,14 +4,37 @@ import java.security.*;
 import java.util.Base64;
 
 public class Key {
-    public class SHA256withRSA {
+    public class SignatureVerification {
         public void main (String[] args) throws Exception {
-            KeyPairGenerator kpg = KeyPairGenerator.getInstance("RSA");
-            kpg.initialize(2048); KeyPair kp = kpg.generateKeyPair();
+            KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
 
-            System.out.println ("-----BEGIN PUBLIC KEY-----");
-            System.out.println (Base64.getMimeEncoder().encodeToString( kp.getPublic().getEncoded()));
-            System.out.println ("-----END PUBLIC KEY-----");
+            //2048 bites kulcsot generáljatok
+            keyPairGenerator.initialize(2048);
+
+            KeyPair keyPair = keyPairGenerator.generateKeyPair();
+
+            PrivateKey privateKey = keyPair.getPrivate();
+
+            //a 'content' aláírásához SHA256withRSA algoritmust használjatok
+            Signature sign = Signature.getInstance("SHA256withRSA");
+
+            sign.initSign(privateKey);
+            byte[] bytes = "hello how are you".getBytes();
+
+            sign.update(bytes);
+
+            byte[] signature = sign.sign();
+
+            sign.initVerify(keyPair.getPublic());
+            sign.update(bytes);
+
+            boolean bool = sign.verify(signature);
+
+            if(bool) {
+                System.out.println("Signature verified");
+            } else {
+                System.out.println("Signature failed");
+            }
 
         }
     }
